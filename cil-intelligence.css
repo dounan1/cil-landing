@@ -1,0 +1,139 @@
+/* CIL Intelligence Design System v1.0 
+  Branding: Communication Intelligence Labs
+*/
+
+:root {
+  /* Core Brand Palette */
+  --cil-orange: #FF5C1B; /* Primary Brand Color [cite: 1, 134] */
+  --cil-black: #000000;  /* Primary Background/Text [cite: 11, 134] */
+  --cil-white: #FFFFFF;
+  --cil-gray-900: #1A1A1A;
+  --cil-gray-100: #F4F4F4;
+
+  /* AI Reasoning & Assessment Tags [cite: 53] */
+  --cil-tag-central: #FF7EB3;   /* Central Idea */
+  --cil-tag-argument: #39D353;  /* Key Argument */
+  --cil-tag-evidence: #2D9CDB;  /* Evidence/Example */
+  --cil-tag-analysis: #F2C94C;  /* Analysis/Reasoning */
+  --cil-tag-insight: #BB6BD9;   /* Original Insight */
+  --cil-tag-impact: #FF4B4B;    /* Impact */
+
+  /* Typography & Spacing */
+  --cil-font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --cil-radius-pill: 50px;
+  --cil-radius-sm: 8px;
+  --cil-transition: all 0.3s ease;
+}
+
+/* --- Layout Utilities --- */
+.cil-bg-dark { background-color: var(--cil-black); color: var(--cil-white); }
+.cil-text-orange { color: var(--cil-orange); }
+
+/* --- Component: Team Portrait Ovals  --- */
+.cil-portrait {
+  width: 220px;
+  height: 280px;
+  border: 3px solid var(--cil-orange);
+  border-radius: 110px; /* Specific oval geometry  */
+  overflow: hidden;
+  display: inline-block;
+  background: var(--cil-gray-900);
+}
+
+.cil-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%); /* Deck uses B&W photography  */
+  transition: var(--cil-transition);
+}
+
+.cil-portrait:hover img {
+  filter: grayscale(0%);
+}
+
+/* --- Component: Reasoning Tags [cite: 4, 53] --- */
+.cil-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: var(--cil-radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cil-white);
+  margin: 4px;
+}
+
+.tag-central { background: var(--cil-tag-central); }
+.tag-argument { background: var(--cil-tag-argument); }
+.tag-evidence { background: var(--cil-tag-evidence); }
+.tag-analysis { background: var(--cil-tag-analysis); font-color: var(--cil-black); }
+.tag-insight { background: var(--cil-tag-insight); }
+.tag-impact { background: var(--cil-tag-impact); }
+
+/* --- Component: Growth Funnel [cite: 9, 124, 126] --- */
+.cil-funnel-item {
+  background-color: var(--cil-orange);
+  color: var(--cil-white);
+  padding: 1rem;
+  margin: 0.5rem auto;
+  border-radius: var(--cil-radius-sm);
+  text-align: center;
+  font-weight: 800;
+  transition: var(--cil-transition);
+}
+
+/* Scaling widths to represent growth data [cite: 124-127] */
+.scale-1000 { width: 100%; }
+.scale-100 { width: 75%; opacity: 0.85; }
+.scale-5 { width: 50%; opacity: 0.7; }
+
+/* --- Component: Data/Transcript Box [cite: 4, 57] --- */
+.cil-data-box {
+  background: var(--cil-gray-100);
+  border-left: 5px solid var(--cil-orange);
+  padding: 1.5rem;
+  font-family: 'Courier New', monospace; /* Technical transcript feel [cite: 57] */
+  color: var(--cil-black);
+  border-radius: 0 var(--cil-radius-sm) var(--cil-radius-sm) 0;
+}
+
+.cil-timestamp {
+  color: var(--cil-orange);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* --- Component: Progress/Funding Bar [cite: 11, 134] --- */
+.cil-progress-track {
+  width: 100%;
+  height: 14px;
+  background: var(--cil-gray-900);
+  border-radius: var(--cil-radius-pill);
+  overflow: hidden;
+}
+
+.cil-progress-fill {
+  height: 100%;
+  background: var(--cil-orange);
+  transition: width 1s ease-in-out;
+}
+
+/* --- Interactive Elements --- */
+.cil-btn-primary {
+  background: var(--cil-orange);
+  color: var(--cil-white);
+  padding: 12px 28px;
+  border-radius: var(--cil-radius-pill);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--cil-transition);
+}
+
+.cil-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 92, 27, 0.4);
+}
