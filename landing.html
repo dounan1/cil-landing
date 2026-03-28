@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Intelligence Labs | AI-Powered Reasoning Evaluation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cil-intelligence.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cil: {
+                            orange: '#FF5C1B',
+                            black: '#000000',
+                            gray: { 100: '#F4F4F4', 900: '#1A1A1A' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: var(--cil-font-main); }
+        .hero-gradient { background: linear-gradient(135deg, var(--cil-black) 0%, var(--cil-gray-900) 100%); }
+        details summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="text-slate-900 bg-white">
+
+    <!-- Nav -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-cil-orange rounded-lg flex items-center justify-center text-white font-bold">C</div>
+                <span class="font-bold text-xl tracking-tight">CIL</span>
+            </div>
+            <div class="hidden md:flex gap-4">
+                <a href="#" class="px-5 py-2 text-slate-600 hover:text-cil-orange font-medium transition">Talk to expert</a>
+                <a href="#" class="cil-btn-primary text-sm">Start for free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="relative pt-20 pb-16 px-6 hero-gradient text-white">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wide uppercase bg-cil-orange/20 text-cil-orange rounded-full border border-cil-orange/30">
+                Built for K-12 Leaders & Universities
+            </span>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-8">
+                AI that measures how people think... by analyzing <span class="text-cil-orange italic">how they speak.</span>
+            </h1>
+            <p class="text-xl text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+                CIL handles the evaluation of reasoning, clarity, and persuasion. No extra grading. Real insight. Setup in minutes. Cancel anytime.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                <a href="#" class="cil-btn-primary text-lg px-8 py-4">Start for free</a>
+                <a href="#" class="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-full text-lg font-bold hover:bg-white/20 transition-all">Talk to expert</a>
+            </div>
+
+            <div class="pt-12 border-t border-white/10">
+                <p class="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-8">Trusted by top institutions globally</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+                    <span class="text-xl font-bold italic text-slate-400">The Pennington School</span>
+                    <span class="text-xl font-bold italic text-slate-400">Lawrenceville School</span>
+                    <span class="text-xl font-bold italic text-slate-400">SCIS</span>
+                    <span class="text-xl font-bold italic text-slate-400">WFL Qingpu</span>
+                    <span class="text-xl font-bold italic text-slate-400">VISST</span>
+                </div>
+                <p class="mt-8 text-slate-300 font-medium">Over 5,000+ assessments completed | 2,000+ students reached</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problem Section -->
+    <section class="py-24 px-6 bg-cil-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Speaking is the least measured — and least understood — skill in education.</h2>
+                    <p class="text-lg text-slate-600 mb-8">What we hear from K-12 leaders:</p>
+                    <div class="space-y-4">
+                        <div class="cil-data-box">
+                            <p class="italic text-slate-700">"They memorize content, but can't explain it clearly."</p>
+                        </div>
+                        <div class="cil-data-box">
+                            <p class="italic text-slate-700">"When students speak, gaps in understanding show immediately."</p>
+                        </div>
+                        <div class="cil-data-box">
+                            <p class="italic text-slate-700">"We don't have time to assess student speaking properly, so it becomes occasional."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-6">
+                    <h3 class="text-xl font-bold mb-2">Previous Solutions Haven't Scaled:</h3>
+                    <div class="p-6 border border-slate-200 rounded-2xl">
+                        <h4 class="font-bold text-cil-orange mb-2">Manual Evaluation</h4>
+                        <p class="text-sm text-slate-600">Feedback is inconsistent across evaluators and not scalable across departments.</p>
+                    </div>
+                    <div class="p-6 border border-slate-200 rounded-2xl">
+                        <h4 class="font-bold text-cil-orange mb-2">In-Class Presentations</h4>
+                        <p class="text-sm text-slate-600">Limited time per student. No way to track improvement over time.</p>
+                    </div>
+                    <div class="p-6 border border-slate-200 rounded-2xl">
+                        <h4 class="font-bold text-cil-orange mb-2">Debate Programs</h4>
+                        <p class="text-sm text-slate-600">Focus on performance for a small group, not everyday learning for all.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Agents Section -->
+    <section class="py-24 px-6 bg-cil-black text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Meet your CIL AI Agents</h2>
+                <p class="text-xl text-slate-400">Specialized AI that evaluates speech, checks understanding, and builds skills.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-cil-gray-900 border border-white/10">
+                    <div class="w-12 h-12 bg-cil-orange rounded-full mb-6 flex items-center justify-center text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Check Understanding</h3>
+                    <p class="text-slate-400">Reveals gaps in reasoning and clarity instantly, working across any subject from humanities to STEM.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-cil-orange text-white">
+                    <div class="w-12 h-12 bg-white/20 rounded-full mb-6 flex items-center justify-center">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Build Communication</h3>
+                    <p class="text-white/80">Tracks improvement across 25+ skills, covering content, organization, voice, and body language.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-cil-gray-900 border border-white/10">
+                    <div class="w-12 h-12 bg-cil-orange rounded-full mb-6 flex items-center justify-center text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Evidence-Based</h3>
+                    <p class="text-slate-400">Built on a clear assessment framework grounded in observable speech features—not generic outputs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-24 px-6 bg-cil-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Real insight with zero extra grading</h2>
+            <div class="space-y-12">
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-cil-orange rounded-full flex items-center justify-center font-bold text-white text-xl">1</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Teachers assign tasks in minutes</h4>
+                        <p class="text-slate-600">Institutions deploy CIL inside existing systems for any current teaching topic.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-cil-orange rounded-full flex items-center justify-center font-bold text-white text-xl">2</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Students practice and record</h4>
+                        <p class="text-slate-600">Users record themselves explaining lessons or practicing real-world scenarios like interviews and debates.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-cil-orange rounded-full flex items-center justify-center font-bold text-white text-xl">3</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">CIL's Agent analyzes and evaluates</h4>
+                        <p class="text-slate-600">The AI instantly measures reasoning, argument structure, persuasion, and delivery.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 bg-cil-orange rounded-full flex items-center justify-center font-bold text-white text-xl">4</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-2">Instant, structured reporting</h4>
+                        <p class="text-slate-600">Receive a Data-Driven Speaking Report with deep analytics on communication development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Automate evaluation & improve outcomes</h2>
+            <div class="overflow-x-auto rounded-3xl border border-slate-200 shadow-xl">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-cil-black text-white">
+                            <th class="p-6 font-bold">Area</th>
+                            <th class="p-6 font-bold">Before CIL</th>
+                            <th class="p-6 font-bold bg-cil-orange">With CIL</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="p-6 font-semibold">Understanding</td>
+                            <td class="p-6 text-slate-500 italic">Hidden behind written answers</td>
+                            <td class="p-6 font-medium" style="color: var(--cil-orange); background: rgba(255,92,27,0.06);">Clearly revealed via spoken explanation</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-semibold">Practice</td>
+                            <td class="p-6 text-slate-500 italic">Occasional presentations</td>
+                            <td class="p-6 font-medium" style="color: var(--cil-orange); background: rgba(255,92,27,0.06);">Structured, repeatable daily tasks</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-semibold">Teacher Workload</td>
+                            <td class="p-6 text-slate-500 italic">Hours spent watching/grading</td>
+                            <td class="p-6 font-medium" style="color: var(--cil-orange); background: rgba(255,92,27,0.06);">AI handles analysis — focus on teaching</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-semibold">Visibility</td>
+                            <td class="p-6 text-slate-500 italic">No clear data on speaking</td>
+                            <td class="p-6 font-medium" style="color: var(--cil-orange); background: rgba(255,92,27,0.06);">Track 25+ specific communication skills</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 px-6 bg-cil-gray-100">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                    <summary class="p-6 flex justify-between items-center cursor-pointer font-bold text-lg list-none">
+                        How is CIL different from other AI tools?
+                        <span class="group-open:rotate-180 transition-transform text-cil-orange">↓</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed">
+                        Unlike standard AI that generates text, CIL is built on a clear assessment framework grounded in observable features of student speech. We offer a standard signal for reasoning ability that currently does not exist.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                    <summary class="p-6 flex justify-between items-center cursor-pointer font-bold text-lg list-none">
+                        Will this add to our teachers' workload?
+                        <span class="group-open:rotate-180 transition-transform text-cil-orange">↓</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed">
+                        No. CIL provides real insight with no extra grading. Teachers assign tasks in minutes, and the AI handles the evaluation and feedback.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                    <summary class="p-6 flex justify-between items-center cursor-pointer font-bold text-lg list-none">
+                        What exactly does the AI analyze?
+                        <span class="group-open:rotate-180 transition-transform text-cil-orange">↓</span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-600 leading-relaxed">
+                        CIL analyzes Content, Organization, English Proficiency, Voice, and Body Language to check understanding and build communication simultaneously.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-6 bg-cil-black text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Ready to build the global infrastructure for improving reasoning and communication?</h2>
+            <p class="text-xl text-slate-400 mb-12">When communication becomes a measurable signal, CIL defines the metric.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="cil-btn-primary text-xl px-10 py-5">Book a Demo</a>
+                <a href="#" class="px-10 py-5 bg-white/10 text-white border border-white/20 rounded-full text-xl font-bold hover:bg-white/20 transition-all">Talk to expert</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 px-6 border-t border-slate-100 text-slate-500 text-center">
+        <p>&copy; 2024 Communication Intelligence Labs (CIL). All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
